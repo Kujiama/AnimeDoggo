@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
+    <title>AnimeDoggo</title>
+</head>
+
+<body>
+    <section id="landing_page">
+        <div class="container">
+            <div class="row">
+                <nav>
+                    <figure class="nav_logo-wrapper">
+                        <img src="./assets/animedoggo.png" class="nav_logo" alt="logo">
+                    </figure>
+                    <ul class="nav_list">
+                        <li class="nav_item">
+                            <a href="#" class="nav_anchor nav_anchor-hover-effect" onclick="toggleHome()">Home</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#" class="nav_anchor nav_anchor-hover-effect"
+                                onclick="toggleBrowse(), toggleBrowse()">Anime
+                                List</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#" class=" nav_anchor nav_primary_anchor" onclick="notImplement()">Contact
+                                Us!</a>
+                        </li>
+                    </ul>
+                    <button class="burger_menu nav_burger-menu burger_menu--open" onclick="toggleOpen()">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </button>
+                    <div class="menu_backdrop">
+                        <div class="burger_list-wrapper">
+                            <ul class="burger_list">
+                                <button class="burger_menu burger_menu--close" onclick="toggleClose()">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                                <li class="burger_item">
+                                    <a href="#" class="nav_anchor nav_anchor-hover-effect"
+                                        onclick="toggleHome()">Home</a>
+                                </li>
+                                <li class="burger_item">
+                                    <a href="#" class="nav_anchor nav_anchor-hover-effect"
+                                        onclick="toggleBrowse()">Anime
+                                        List</a>
+                                </li>
+                                <li class="burger_item">
+                                    <a href="#" class=" nav_anchor nav_primary_anchor" onclick="notImplement()">Contact
+                                        Us!</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="landing_section">
+                    <h1 class="landing_title orange_text">Best website to watch all of your favourite anime</h1>
+                    <h2 class="landing_sub-title">WATCH YOUR FAVOURITE ANIME WITH <span
+                            class="orange_text">AnimeDoggo.io</span>!
+                    </h2>
+                    <form class="input_wrapper input anime_input-wrapper">
+                        <input type="text" placeholder="Search Anime" name="search" id="search_input"></input>
+                        <button for="search" class="search_btn" onclick="notImplement()"> <i
+                                class=" fas fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+            <figure class="landing_image-wrapper">
+                <img src="./assets/undraw_press_play_re_85bj.svg" class="landing_img">
+            </figure>
+        </div>
+        </div>
+    </section>
+    <script src="./index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
+    <title>AnimeDoggo List</title>
+</head>
+
+<body>
+    <section>
+        <div class="Anime_list-navigation">
+            <div class="container anime_page_container">
+                <div class="row">
+                    <nav>
+                        <figure class="nav_logo-wrapper">
+                            <img src="./assets/animedoggo white.png" class="nav_logo nav_anime-page-logo" alt="logo">
+                        </figure>
+                        <ul class="nav_list">
+                            <li class="nav_item">
+                                <a href="#" class="nav_anchor nav_anchor-white nav_anchor-hover-effect-white"
+                                    onclick="toggleHome()">Home</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_anchor nav_anchor-white nav_anchor-hover-effect-white"
+                                    onclick="toggleBrowse()">Browse
+                                    Anime</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class=" nav_anchor nav_primary_anchor" onclick="notImplement()">Contact
+                                    Us!</a>
+                            </li>
+                        </ul>
+                        <button class="burger_menu burger_menu-white nav_burger-menu burger_menu--open click"
+                            onclick="toggleOpen()">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </button>
+                        <div class="menu_backdrop">
+                            <div class="burger_list-wrapper">
+                                <ul class="burger_list">
+                                    <button class="burger_menu burger_menu--close click" onclick="toggleClose()">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                    <li class="burger_item">
+                                        <a href="#" class="nav_anchor nav_anchor-hover-effect"
+                                            onclick="toggleHome()">Home</a>
+                                    </li>
+                                    <li class="burger_item">
+                                        <a href="#" class="nav_anchor nav_anchor-hover-effect"
+                                            onclick="toggleBrowse()">Anime
+                                            List</a>
+                                    </li>
+                                    <li class="burger_item">
+                                        <a href="#" class=" nav_anchor nav_primary_anchor"
+                                            onclick="notImplement()">Contact
+                                            Us!</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <h1 class="anime-input_title white_text">Browse Anime</h1>
+                    <form class="input_wrapper input anime_input-wrapper">
+                        <input type="text" placeholder="Search Anime" name="search" id="search_input"></input>
+                        <button for="search" class="search_btn"> <i class=" fas fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="main_panel">
+                    <h2 class="main_title orange_text">Browse Anime</h2>
+                    <select class="main_anime-sort" name="" id="filter" onchange="filterAnime(event)">
+                        <option value="" disabled selected>Sort</option>
+                        <option value="Newest">Newest</option>
+                        <option value="Popular">Popular</option>
+                        <option value="Ratings">Top Rated</option>
+                    </select>
+                </div>
+                <div class="loading_wrapper">
+                    <!-- <div class="main_overlay-loading"><span class="main_overlay-loading-inner"></span></div> -->
+                </div>
+                <div class="main_content"></div>
+            </div>
+        </div>
+    </section>
+    <main>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="anime_list">
+                    </div>
+                </div>
+        </section>
+    </main>
+    <script src="./animelist.js"></script>
+</body>
+
+</html>
